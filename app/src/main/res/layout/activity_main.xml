@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        tools:context=".MainActivity">
+
+    <com.appl.batterypowerdemo.BatteryPowerView
+            android:id="@+id/BPV"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/textView"
+            android:text="0"
+            android:layout_below="@id/BPV"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+
+    <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_below="@id/textView"
+            android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
