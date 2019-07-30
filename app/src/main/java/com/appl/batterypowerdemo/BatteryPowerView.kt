@@ -26,13 +26,14 @@ class BatteryPowerView : ImageView {
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        val scale = measuredHeight / 29
+        val scale = measuredHeight / 29.0f
 
+        canvas?.translate(5f * scale,0f)
         canvas?.drawRect(
-            5f * scale,
-            5f * scale,
-            (measuredWidth - 9f * scale) * electricity,
-            measuredHeight - 5f * scale,
+            0f,
+            (5f * scale),
+            (measuredWidth - 14f * scale) * electricity,
+            measuredHeight - (5f * scale),
             paint
         )
     }
